@@ -1,1 +1,2 @@
-.txt # Exlui arquivos .txt estou usando p/ anotar os recursos AWS
+# Exlui arquivos .txt estou usando p/ anotar os recursos AWS
+*.txt
