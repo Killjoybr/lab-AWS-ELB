@@ -13,3 +13,23 @@
 
 - Verificar o funcionamento do ambiente e solucionar problemas comuns.
 
+## Evidências do Lab
+<details>
+<summary>Aplicação web</summary>
+
+![print da aplicação web rodando o servidor http apache](./assets/elb-web.png)
+</details>
+
+<details>
+<summary>Script Criação servidor http Apache</summary>
+
+```sh
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1> Servidor Web - instância: $(hostname -f)</h1>" >> /var/www/html/index.html
+echo "<p> Lab <strong>ELB</strong> <br> Ruan David da Silva aluno <strong>EdN</strong></p>" >> /var/www/html/index.html
+```
+</details>
